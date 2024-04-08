@@ -37,7 +37,7 @@ export default function Home() {
         <div className="p-12 flex flex-col align-start dm:p-8">
           <Image src="/dribble.png" width={100} height={50} className="mb-8" />
           <h2 className="text-[#4e3d34] font-bold text-3xl dm:text-2xl">
-            Discover`&apos;`s the world`&apos;`s top Designer & Creatives{" "}
+            Discover&apos;s the world&apos;s top Designer & Creatives{" "}
           </h2>
           <Image
             src={`/WFH_svg 3/wfh_${random + 1}.svg`}
@@ -124,7 +124,7 @@ export default function Home() {
               </div>
               <div>
                 <p className="p-0 m-0 dm:text-justify dm:text-sm dm:px-4">
-                  Creating an account means you`&apos;`re okay with our Terms of
+                  Creating an account means you&apos;re okay with our Terms of
                   Service, Privacy Policy, and default Notification Settings.
                 </p>
               </div>

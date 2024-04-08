@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import { useState } from "react";
-import CircularImg from "@/components/CircularImg";
+import CircularImg from "../../../components/CircularImg";
 const inter = Inter({ subsets: ["latin"] });
 import { useRouter } from "next/router";
 
@@ -43,7 +43,7 @@ function Index() {
         <div className="flex justify-center items-start flex-col w-[500px] dm:w-[100%] dm:items-center">
           <div className="py-4 dm:py-2">
             <h2 className="text-black font-bold lg:text-3xl my-2 dm:text-2xl dm:my-1 dm:text-center">
-              Welcome! let`&apos;`s create your profile
+              Welcome! let&apos;s create your profile
             </h2>
             <p className="dm:px-6">
               Let others get to know you better! You can do these later

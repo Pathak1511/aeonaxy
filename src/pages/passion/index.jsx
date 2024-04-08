@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import { useState } from "react";
-import CircularImg from "@/components/CircularImg";
-import Cards from "@/components/cards";
+import CircularImg from "../../../components/CircularImg";
+import Cards from "../../../components/cards";
 import { useRouter } from "next/router";
 const inter = Inter({ subsets: ["latin"] });
 
@@ -57,8 +57,8 @@ function Index() {
             What brings you to Dribble?
           </h2>
           <p className="dm:px-8">
-            Select the options that best describe you. Don`&apos;`t worry, you
-            can explore other options later.
+            Select the options that best describe you. Don&apos;t worry, you can
+            explore other options later.
           </p>
           {/* Cards input */}
           <div className="flex justify-between items-center gap-4 py-16 md:flex-row dm:flex-col">

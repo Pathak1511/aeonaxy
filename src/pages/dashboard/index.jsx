@@ -1,4 +1,4 @@
-import SocialIcons from "@/components/SocialIcons";
+import SocialIcons from "../../../components/SocialIcons";
 import { Inter } from "next/font/google";
 import Image from "next/image";
 const inter = Inter({ subsets: ["latin"] });
@@ -72,8 +72,8 @@ export default function Home() {
             </div>
             <div className="flex items-center justify-center flex-col md:text-lg gap-4 text-center dm:px-6 dm:text-sm">
               <p className="text-gray-500">
-                Please verify your email address. We`&apos;`ve sent a
-                confirmation email to:
+                Please verify your email address. We&apos;ve sent a confirmation
+                email to:
               </p>
               <a href="mailto:" className="font-semibold">
                 account@refere.design
@@ -82,8 +82,8 @@ export default function Home() {
                 click the confirmation link in that email to begin using Dribble
               </p>
               <p className="text-gray-500 text-center">
-                Didn`&apos;`t receive the email? Check your Spam folder, it may
-                have been caught by a filter. if you still don`&apos;`t see it,
+                Didn&apos;t receive the email? Check your Spam folder, it may
+                have been caught by a filter. if you still don&apos;t see it,
                 you can
                 <button className="text-[#d3447d] font-semibold">
                   resend the confirmation email
@@ -106,7 +106,7 @@ export default function Home() {
           <div className="lg:w-[260px] flex flex-col gap-4 md:w-[100%]">
             <Image src="/dribble.png" width={80} height={40} />
             <p>
-              Dribble is the world`&apos;`s leading community for creatives to
+              Dribble is the world&apos;s leading community for creatives to
               share, grow, and get hired
             </p>
             <SocialIcons />
