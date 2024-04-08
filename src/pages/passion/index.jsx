@@ -6,7 +6,7 @@ import Cards from "@/components/cards";
 import { useRouter } from "next/router";
 const inter = Inter({ subsets: ["latin"] });
 
-function index() {
+function Index() {
   const [passion, setPassion] = useState([false, false, false]);
   const router = useRouter();
   const handlePress = (e) => {
@@ -37,7 +37,18 @@ function index() {
               className="w-10 rounded-lg h-10 flex items-center justify-center bg-gray-100 dm:w-8 dm:h-8"
               onClick={() => router.back()}
             >
-              <h2 className="font-bold text-[#444]">`&lt;`</h2>
+              <h2 className="font-bold text-[#444]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-caret-left-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                </svg>
+              </h2>
             </button>
           </div>
         </div>
@@ -46,8 +57,8 @@ function index() {
             What brings you to Dribble?
           </h2>
           <p className="dm:px-8">
-            Select the options that best describe you. Don't worry, you can
-            explore other options later.
+            Select the options that best describe you. Don`&apos;`t worry, you
+            can explore other options later.
           </p>
           {/* Cards input */}
           <div className="flex justify-between items-center gap-4 py-16 md:flex-row dm:flex-col">
@@ -89,4 +100,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;

@@ -5,7 +5,7 @@ import CircularImg from "@/components/CircularImg";
 const inter = Inter({ subsets: ["latin"] });
 import { useRouter } from "next/router";
 
-function index() {
+function Index() {
   const router = useRouter();
   const [imageUrl, setImageUrl] = useState("");
   const [location, setLocation] = useState("");
@@ -43,7 +43,7 @@ function index() {
         <div className="flex justify-center items-start flex-col w-[500px] dm:w-[100%] dm:items-center">
           <div className="py-4 dm:py-2">
             <h2 className="text-black font-bold lg:text-3xl my-2 dm:text-2xl dm:my-1 dm:text-center">
-              Welcome! let's create your profile
+              Welcome! let`&apos;`s create your profile
             </h2>
             <p className="dm:px-6">
               Let others get to know you better! You can do these later
@@ -64,7 +64,19 @@ function index() {
                     className="border-none outline-none p-3 bg-gray-100 rounded-lg mb-4 dm:p-2 dm:mb-2 dm:w-[280px]"
                     onChange={handleFileChange}
                   />
-                  <button>`&#62;` Or choose one of our defaults</button>
+                  <button className="flex gap-2 items-center justify-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-caret-right-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                    </svg>{" "}
+                    Or choose one of our defaults
+                  </button>
                 </div>
               </div>
             </div>
@@ -113,4 +125,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;

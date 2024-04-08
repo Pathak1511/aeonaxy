@@ -37,7 +37,7 @@ export default function Home() {
         <div className="p-12 flex flex-col align-start dm:p-8">
           <Image src="/dribble.png" width={100} height={50} className="mb-8" />
           <h2 className="text-[#4e3d34] font-bold text-3xl dm:text-2xl">
-            Discover's the world's top Designer & Creatives{" "}
+            Discover`&apos;`s the world`&apos;`s top Designer & Creatives{" "}
           </h2>
           <Image
             src={`/WFH_svg 3/wfh_${random + 1}.svg`}
@@ -65,12 +65,12 @@ export default function Home() {
             </p>
           </div>
           {/* name and username box */}
-          <div className="flex justify-between items-center gap-8 py-4 dm:text-sm dm:py-2 dm:gap-4">
-            <div className="w-[100%] dm:w-[96%]">
+          <div className="flex justify-between items-center md:gap-8 md:py-4 dm:text-sm dm:py-2 dm:gap-4">
+            <div className="md:w-[100%] dm:w-[96%]">
               <h4 className="font-bold">Name</h4>
               <input
                 placeholder="name"
-                className="border-none outline-none p-3 bg-gray-100 rounded-lg w-[100%] dm:p-2"
+                className="border-none outline-none md:p-3 bg-gray-100 rounded-lg w-[100%] dm:p-2"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
@@ -80,7 +80,7 @@ export default function Home() {
               <h4 className="font-bold ">Username</h4>
               <input
                 placeholder="username"
-                className="border-none outline-none p-3 bg-gray-100 rounded-lg w-[100%] dm:p-2"
+                className="border-none outline-none md:p-3 bg-gray-100 rounded-lg w-[100%] dm:p-2"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
               />
@@ -93,7 +93,7 @@ export default function Home() {
               <h4 className="font-bold">Email</h4>
               <input
                 placeholder="email"
-                className="border-none outline-none p-3 bg-gray-100 rounded-lg w-[100%] dm:p-2"
+                className="border-none outline-none md:p-3 bg-gray-100 rounded-lg w-[100%] dm:p-2"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
@@ -106,7 +106,7 @@ export default function Home() {
               <h4 className="font-bold">Password</h4>
               <input
                 placeholder="6+ characters"
-                className="border-none outline-none p-3 bg-gray-100 rounded-lg w-[100%] dm:p-2"
+                className="border-none outline-none md:p-3 bg-gray-100 rounded-lg w-[100%] dm:p-2"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
@@ -124,7 +124,7 @@ export default function Home() {
               </div>
               <div>
                 <p className="p-0 m-0 dm:text-justify dm:text-sm dm:px-4">
-                  Creating an account means you're okay with our Terms of
+                  Creating an account means you`&apos;`re okay with our Terms of
                   Service, Privacy Policy, and default Notification Settings.
                 </p>
               </div>
@@ -135,7 +135,7 @@ export default function Home() {
           <div className="flex justify-between items-center gap-8 py-4">
             <div className="w-[236px] dm:w-[200px]">
               <button
-                className="border-none outline-none p-3 bg-[#EA4B8B] text-white fomt-semibold rounded-lg w-[100%] hover:bg-[#d3447d]-800 focus:ring-1 focus:ring-[#f081ae] font-medium text-sm dm:p-2"
+                className="border-none outline-none md:p-3 bg-[#EA4B8B] text-white fomt-semibold rounded-lg w-[100%] hover:bg-[#d3447d]-800 focus:ring-1 focus:ring-[#f081ae] font-medium text-sm dm:p-2"
                 onClick={handleSubmit}
               >
                 Create Account
