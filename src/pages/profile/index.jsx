@@ -64,7 +64,7 @@ function index() {
                     className="border-none outline-none p-3 bg-gray-100 rounded-lg mb-4 dm:p-2 dm:mb-2 dm:w-[280px]"
                     onChange={handleFileChange}
                   />
-                  <button>&#62; Or choose one of our defaults</button>
+                  <button>`&#62;` Or choose one of our defaults</button>
                 </div>
               </div>
             </div>

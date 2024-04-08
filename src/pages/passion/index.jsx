@@ -37,7 +37,7 @@ function index() {
               className="w-10 rounded-lg h-10 flex items-center justify-center bg-gray-100 dm:w-8 dm:h-8"
               onClick={() => router.back()}
             >
-              <h2 className="font-bold text-[#444]">&lt;</h2>
+              <h2 className="font-bold text-[#444]">`&lt;`</h2>
             </button>
           </div>
         </div>
