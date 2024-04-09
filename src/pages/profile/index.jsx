@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import { useState } from "react";
-import CircularImg from "../../../components/CircularImg";
+import CircularImg from "../../components/CircularImg";
 const inter = Inter({ subsets: ["latin"] });
 import { useRouter } from "next/router";
 
@@ -40,7 +40,7 @@ function Index() {
             />
           </div>
         </div>
-        <div className="flex justify-center items-start flex-col w-[500px] dm:w-[100%] dm:items-center">
+        <div className="flex justify-center items-start flex-col md:w-[500px] dm:w-[100%] dm:items-center">
           <div className="py-4 dm:py-2">
             <h2 className="text-black font-bold lg:text-3xl my-2 dm:text-2xl dm:my-1 dm:text-center">
               Welcome! let&apos;s create your profile
@@ -51,17 +51,17 @@ function Index() {
           </div>
           {/* File input */}
           <div className="flex justify-between items-center gap-4 py-4 dm:py-2">
-            <div className="lg:w-[100%] dm:w-[200px] dm:flex dm:flex-col">
+            <div className="md:w-[100%] dm:w-[200px] dm:flex dm:flex-col">
               <h4 className="font-bold lg:text-2xl mb-8 dm:text-xl dm:text-center dm:mb-2">
                 Add an avatar
               </h4>
-              <div className="flex gap-4 lg:flex-row dm:flex-col dm:items-center dm:justify-center dm:p-4">
+              <div className="flex md:w-[100%] gap-4 md:flex-row dm:flex-col dm:items-center dm:justify-center dm:p-4">
                 <CircularImg imageUrl={imageUrl} />
                 <div className="w-[min-content] dm:p-0 dm:m-2">
                   <input
                     type="file"
                     accept="image/*"
-                    className="border-none outline-none p-3 bg-gray-100 rounded-lg mb-4 dm:p-2 dm:mb-2 dm:w-[280px]"
+                    className="border-none outline-none md:w-[400px] p-3 bg-gray-100 rounded-lg mb-4 dm:p-2 dm:mb-2 dm:w-[280px]"
                     onChange={handleFileChange}
                   />
                   <button className="flex gap-2 items-center justify-center">

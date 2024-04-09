@@ -8,7 +8,7 @@ const CircularImg = ({ imageUrl }) => {
   };
 
   return (
-    <div className="relative w-32 h-32 bg-gray-100 rounded-full overflow-hidden dm:w-28 dm:h-28">
+    <div className="relative md:w-32 md:h-32 bg-gray-100 rounded-full overflow-hidden dm:w-28 dm:h-28">
       <img
         src={imageUrl}
         alt="Uploaded"
