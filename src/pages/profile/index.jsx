@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import { useState } from "react";
-import CircularImg from "../../components/CircularImg";
+import CircularImg from "@/components/Cards";
 const inter = Inter({ subsets: ["latin"] });
 import { useRouter } from "next/router";
 
